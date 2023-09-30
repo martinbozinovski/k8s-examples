@@ -1,0 +1,4 @@
+# network policies only
+kubectl create namespace np-test
+kubectl label namespace np-test team=np-test
+kubectl exec -n np-test np-busybox -- curl NGINX_IP
